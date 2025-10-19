@@ -43,7 +43,7 @@ const MessageInput = () => {
       setImagePreview(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
     } catch (error) {
-      toast.error("Image too large!", error);
+      toast.error("Image too large!");
       console.error("Failed to send message:", error);
     }
   };
